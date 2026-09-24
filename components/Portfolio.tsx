@@ -16,7 +16,7 @@ import {
   Phone,
 } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-
+import Hero3D from "./Hero3D";
 import { profile } from "../data/profile";
 import { skillGroups } from "../data/skills";
 import { projects } from "../data/projects";
@@ -248,7 +248,7 @@ export default function Portfolio() {
             transition={{ duration: 0.8, delay: 0.15 }}
             className="hidden items-center justify-center lg:flex"
           >
-            <div className="relative">
+        <div id="photo-tilt" className="relative"><Hero3D />
 
               {/* OUTER FRAME */}
               <div className="absolute -inset-4 border border-[#8cffb7]/20" />
